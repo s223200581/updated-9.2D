@@ -1,0 +1,43 @@
+/* Styles for the post form container */
+.post-form {
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px; /* Rounds the corners of the form */
+  padding: 20px; /* Adds padding inside the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the form */
+  margin-top: 20px; /* Adds space above the form */
+  max-width: 600px; /* Sets the maximum width of the form */
+  margin: 0 auto; /* Centers the form horizontally */
+}
+
+/* Styles for individual form fields within the post form */
+.post-form .form-field {
+  margin-bottom: 20px; /* Adds space below each form field */
+}
+
+/* Styles for buttons within the post form */
+.post-form button {
+  border-radius: 5px; /* Rounds the corners of the button */
+  padding: 10px 20px; /* Adds padding inside the button */
+  font-size: 1em; /* Sets the font size for the button text */
+  border: none; /* Removes the default border of the button */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  background-color: var(--primary-color); /* Sets the background color using a CSS variable */
+  color: #fff; /* Sets the text color to white */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and box shadow on hover */
+}
+
+/* Styles for the button when hovered */
+.post-form button:hover {
+  background-color: var(--secondary-color); /* Changes the background color on hover using a CSS variable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow around the button on hover */
+}
+
+/* Styles for invalid input fields */
+input:invalid, textarea:invalid {
+  border: 2px solid #e74c3c; /* Red border to indicate invalid input */
+}
+
+/* Styles for valid input fields */
+input:valid, textarea:valid {
+  border: 2px solid #2ecc71; /* Green border to indicate valid input */
+}

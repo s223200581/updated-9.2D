@@ -1,0 +1,48 @@
+/* src/components/PostEditor.css */
+
+.post-editor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .editor-header select {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .editor-section, .preview-section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+  }
+  
+  .editor-section h3, .preview-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .CodeMirror {
+    height: auto;
+    min-height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .markdown-preview {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    min-height: 300px;
+    white-space: pre-wrap; /* Ensure newlines are preserved */
+  }
+  

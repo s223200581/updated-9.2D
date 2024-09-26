@@ -1,0 +1,81 @@
+/* Define CSS custom properties (variables) for color themes and design */
+:root {
+  --primary-color: #3498db; /* Primary color for buttons and highlights */
+  --secondary-color: #2ecc71; /* Secondary color for accents and hover effects */
+  --background-color: #f0f4f8; /* Background color for the body */
+  --header-background-color: #333; /* Background color for the header */
+  --text-color: #2c3e50; /* Color for general text */
+}
+
+/* Styles for the body element */
+body {
+  background-color: var(--background-color); /* Sets the background color using the defined variable */
+  color: var(--text-color); /* Sets the text color using the defined variable */
+  margin: 0; /* Removes default margin */
+  font-family: 'Arial', sans-serif; /* Sets the font family for the page */
+  -webkit-font-smoothing: antialiased; /* Improves font rendering on WebKit-based browsers */
+  -moz-osx-font-smoothing: grayscale; /* Improves font rendering on Firefox for macOS */
+}
+
+/* Styles for the main App component */
+.App {
+  text-align: center; /* Centers text and inline elements horizontally */
+}
+
+/* Styles for the header section of the App */
+.App-header {
+  background-color: var(--header-background-color); /* Sets the background color using the defined variable */
+  color: #fff; /* Sets the text color to white */
+  min-height: 15vh; /* Sets a minimum height for the header */
+  display: flex; /* Uses flexbox layout for alignment */
+  flex-direction: column; /* Aligns children elements vertically */
+  align-items: center; /* Centers items horizontally within the header */
+  justify-content: center; /* Centers items vertically within the header */
+  font-size: calc(10px + 2vmin); /* Dynamically sets the font size based on viewport width */
+}
+
+/* Styles for the container element within the App */
+.container {
+  max-width: 800px; /* Sets the maximum width of the container */
+  margin: 20px auto; /* Centers the container horizontally and adds vertical margin */
+  padding: 20px; /* Adds padding inside the container */
+  background-color: #fff; /* Sets the background color to white */
+  border-radius: 8px; /* Rounds the corners of the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
+}
+
+/* Styles for the header section inside the container */
+.header {
+  margin-bottom: 20px; /* Adds space below the header */
+}
+
+/* Styles for h2 elements within the header */
+.header h2 {
+  font-size: 2em; /* Sets the font size for main headers */
+  color: var(--text-color); /* Sets the text color using the defined variable */
+}
+
+/* Styles for h3 elements within the header */
+.header h3 {
+  font-size: 1.5em; /* Sets the font size for sub-headers */
+  color: var(--text-color); /* Sets the text color using the defined variable */
+}
+
+/* Styles for paragraph elements */
+p {
+  font-size: 1em; /* Sets the font size for paragraphs */
+  color: #7f8c8d; /* Light gray color for paragraph text */
+}
+
+/* Media query for responsive design on devices with a max-width of 768px */
+@media (max-width: 768px) {
+  /* Adjustments for the header font size on smaller screens */
+  .App-header { 
+    font-size: 1.2em; /* Reduces the font size for better readability on smaller screens */
+  }
+
+  /* Adjustments for container padding on smaller screens */
+  .container {
+    padding: 10px; /* Reduces padding inside the container */
+  }
+}
